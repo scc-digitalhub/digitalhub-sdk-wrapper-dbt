@@ -7,7 +7,7 @@ FROM python:3.9
 LABEL org.opencontainers.image.source=https://github.com/scc-digitalhub/digitalhub-sdk-wrapper-dbt
 
 ARG ver_sdk=0.13.0b3
-ARG ver_dbt=0.13.0b0
+ARG ver_dbt=0.13.0b1
 
 # Set working dir
 WORKDIR /app/
