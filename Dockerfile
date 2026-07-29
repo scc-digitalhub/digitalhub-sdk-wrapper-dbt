@@ -14,7 +14,7 @@ WORKDIR /app/
 
 # Install runtime and requirements
 RUN python -m pip install "digitalhub[pandas]==${ver_sdk}" \
-                          "digitalhub_runtime_dbt[local]==${ver_dbt}"
+                          "digitalhub_runtime_dbt[local]==${ver_dbt}" "dbt-core<1.9"
 
 # Copy wrapper and set entry point
 COPY wrapper.py /app/
